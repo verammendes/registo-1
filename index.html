@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Formalização</title>
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+  --bg:#ffffff; --text:#1a1a1a; --muted:#666;
+  --red:#f24ae1; --blue:#FF4903; --green:#04ac60; --purple:#0ca3e4;
+ --mx:clamp(16px, calc((100vw - 600px) / 2), 300px);
+  --my:clamp(56px, 8.5vw, 130px);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --bg:#16161a; --text:#ecebe6; --muted:#a09f99;
+    --blue:#8f94ff; --purple:#d08cf5;
+  }
+}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{min-height:100%;margin:0;background:var(--bg);color:var(--text);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.45;font-weight:500;-webkit-font-smoothing:antialiased}
+main{max-width:none;margin:0;padding:var(--my) var(--mx);text-align:left}
+.page{display:none}
+.page.active{display:block}
+p{margin:0 0 2em;font-size:18px;line-height:1.13em;text-indent:em}
+.c{display:inline;line-height:inherit;vertical-align:baseline;font-weight:inherit;cursor:pointer;text-decoration:none;text-underline-offset:3px;background:none;border:0;padding:0;margin:0;font:inherit;color:inherit;text-align:inherit}
+.c{font-weight:inherit;cursor:pointer;text-decoration:none;text-underline-offset:3px;background:none;border:0;padding:0;font:inherit;color:inherit;text-align:inherit}
+.c:hover{text-decoration:underline}
+.c:focus-visible,a.l:focus-visible{outline:2px solid var(--muted);outline-offset:3px}
+.c.red{color:var(--red)} .c.blue{color:var(--blue)} .c.green{color:var(--green)} .c.purple{color:var(--purple)}
+.c.off{color:var(--text)}
+#p2 .c:not(.off){text-decoration:underline}
+a.l{color:inherit;text-decoration:none;cursor:pointer}
+a.l:hover{text-decoration:underline;text-underline-offset:3px}
+#p2.active{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:var(--my) var(--mx);box-sizing:border-box;line-height:1.45}
+.words{display:flex;justify-content:space-between;align-items:center;width:100%}
+#p3.active{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:0 8%;box-sizing:border-box;text-align:center}
+.words .c{font-size:17px;line-height:1.45}
+.phrase{font-size:17px}
+</style>
+</head>
+<body>
+<main>
+
+<section id="p1" class="page active">
+  <p>Dreams of technology as “fixing” our political situation stem from a fundamental belief in technology as “blinding” and thus just. (...) Even as “utopian” dreams of <a class="l" href="https://example.com/cyberspace" target="_blank" rel="noopener noreferrer">cyberspace</a> have faded, however, the hopeful ignorance behind them has endured, giving rise to
+    <span class="c red" data-go="p2" role="button" tabindex="0">machine learning programs that, by ignoring race, perpetuate racism.</span></p>
+
+  <p><span class="c red" data-go="p2" role="button" tabindex="0">Whom do these systems serve?</span>
+    <span class="c blue" data-go="p2" role="button" tabindex="0">What are the political economies of their construction?</span></p>
+
+  <p><a class="l" href="https://example.com/ai" target="_blank" rel="noopener noreferrer">AI</a> began as a major public project of the twentieth century and was
+    <span class="c blue" data-go="p2" role="button" tabindex="0">relentlessly privatized</span>
+    to produce enormous financial gains for the
+    <span class="c blue" data-go="p2" role="button" tabindex="0">tiny minority at the top</span>
+    of the extraction pyramid.</p>
+
+  <p>The intensification of
+    <span class="c blue" data-go="p2" role="button" tabindex="0">technocratic power</span>
+    has been under way for a long time, but the process has now accelerated. In part this is due to the
+    <span class="c green" data-go="p2" role="button" tabindex="0">concentration of industrial</span>
+    capital
+    <span class="c purple" data-go="p2" role="button" tabindex="0">at a time of economic austerity</span>
+    and outsourcing, including the defunding of social welfare systems and institutions that once acted as a check on market power. This is why we must contend with AI as a <a class="l" href="https://www.youtube.com/watch?v=n8Dd5aVXLCc" target="_blank" rel="noopener noreferrer">political, economic, cultural, and scientific force</a>.</p>
+
+  <p>With each computer “revolution”—with each move to make computers more “user friendly,” that is,
+    <span class="c red" data-go="p2" role="button" tabindex="0">more and more opaque to the humans who use them</span>.</p>
+
+  <p><a class="l" href="https://example.com/g-bailey" target="_blank" rel="noopener noreferrer">G. Bailey</a> observed, the technique of
+    <span class="c red" data-go="p2" role="button" tabindex="0">“obscuring by mystification”</span>
+    is often employed in public settings to argue for
+    <span class="c blue" data-go="p2" role="button" tabindex="0">a phenomenon’s inevitability</span>.
+    We are told to focus on the innovative nature of the method rather than on what is primary:
+    <span class="c blue" data-go="p2" role="button" tabindex="0">the purpose of the thing itself</span>.
+    Above all, <span class="c red" data-go="p2" role="button" tabindex="0">enchanted determinism</span> obscures power and closes off informed public discussion, critical scrutiny, or outright rejection.</p>
+
+  <p>AI systems are not autonomous, rational, or able to discern anything without extensive, computationally intensive training with
+    <span class="c green" data-go="p2" role="button" tabindex="0">large datasets</span>
+    or predefined rules and rewards. In fact, artificial intelligence as we know it depends entirely on a much wider set of
+    <span class="c purple" data-go="p2" role="button" tabindex="0">political and social structures</span>.
+    And due to the capital required to build AI at scale and the ways of seeing that it optimizes AI systems are ultimately designed to serve
+    <span class="c blue" data-go="p2" role="button" tabindex="0">existing dominant interests</span>.
+    In this sense, artificial intelligence is
+    <a class="l" href="https://www.youtube.com/watch?v=G06dEcZ-QTg" target="_blank" rel="noopener noreferrer">a registry of power</a>.</p>
+
+  <p>Even a system that appears to perform spectacularly in training can make
+    <span class="c red" data-go="p2" role="button" tabindex="0">terrible predictions when presented with novel data in the world</span>.</p>
+
+  <p>Datasets in AI are never raw materials to feed algorithms: they are inherently
+    <span class="c green" data-go="p2" role="button" tabindex="0">political interventions</span>.
+    The entire practice of harvesting data, categorizing and labeling it, and then using it to train systems is a form of politics. It has brought a shift to what are called
+    <span class="c green" data-go="p2" role="button" tabindex="0">operational images</span>—representations of the world made solely for machines.</p>
+
+  <p>What epistemological violence is necessary to make the world readable to a machine learning system? AI seeks to
+    <span class="c red" data-go="p2" role="button" tabindex="0">systematize the unsystematizable</span>,
+    <span class="c purple" data-go="p2" role="button" tabindex="0">formalize the social</span>,
+    and convert an infinitely complex and changing universe into a Linnaean order of
+    <span class="c green" data-go="p2" role="button" tabindex="0">machine-readable tables</span>.
+    Many of AI’s achievements have depended on boiling things down to a terse set of formalisms based on proxies: identifying and naming some features while ignoring or obscuring countless others. (...) AI systems become deterministic when these proxies are taken as ground truth, when
+    <span class="c green" data-go="p2" role="button" tabindex="0">fixed labels are applied to a fluid complexity</span>.</p>
+
+  <p>They are designed to discriminate, to
+    <span class="c blue" data-go="p2" role="button" tabindex="0">amplify hierarchies</span>,
+    and to encode narrow classifications. When applied in social contexts such as <a class="l" href="https://c4sr.columbia.edu/projects/million-dollar-blocks" target="_blank" rel="noopener noreferrer">policing, the court system, health care, and education</a>, they can reproduce, optimize, and amplify
+    <span class="c purple" data-go="p2" role="button" tabindex="0">existing structural inequalities</span>.</p>
+
+  <p>The problem is not that
+    <span class="c blue" data-go="p2" role="button" tabindex="0">giant technology monopolies</span>
+    have disrupted habits, institutions, and norms in order to create new, unforeseen futures. The problem is that, in the name of “creative disruption,” they are amplifying and automating—rather than acknowledging and repairing—the mistakes of
+    <span class="c purple" data-go="p2" role="button" tabindex="0">a discriminatory past</span>.</p>
+
+  <p>Discrimination and injustice do not come from outside—they are “in there,” because
+    <span class="c red" data-go="p2" role="button" tabindex="0">technological defaults</span>
+    are embedded with
+    <span class="c purple" data-go="p2" role="button" tabindex="0">cultural and social prejudices</span>.</p>
+</section>
+
+<section id="p2" class="page">
+  <div class="words">
+    <span class="c blue" data-go="p3" role="button" tabindex="0">power</span>
+    <span class="c red" data-go="p3" role="button" tabindex="0">systems</span>
+    <span class="c green" data-go="p3" role="button" tabindex="0">data</span>
+    <span class="c purple" data-go="p3" role="button" tabindex="0">society</span>
+  </div>
+</section>
+
+<section id="p3" class="page">
+  <div class="phrase">systematize the unsystematizable</div>
+</section>
+
+</main>
+<script>
+var selected = null;
+var COLORS = ['red', 'blue', 'green', 'purple'];
+
+function show(id) {
+  document.querySelectorAll('.page').forEach(function (p) {
+    p.classList.toggle('active', p.id === id);
+  });
+  window.scrollTo(0, 0);
+  if (id === 'p2') {
+    document.querySelectorAll('#p2 .c').forEach(function (b) {
+      b.classList.toggle('off', !!selected && !b.classList.contains(selected));
+    });
+  }
+}
+
+document.addEventListener('click', function (e) {
+  var c = e.target.closest('#p1 .c');
+  if (c) {
+    selected = COLORS.filter(function (k) { return c.classList.contains(k); })[0] || null;
+  }
+  var t = e.target.closest('[data-go]');
+  if (t) {
+    t.blur();
+    location.hash = t.dataset.go;
+  }
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter' || e.key === ' ') {
+    var t = e.target.closest('.c[data-go]');
+    if (t) {
+      e.preventDefault();
+      t.click();
+    }
+  }
+});
+
+window.addEventListener('hashchange', function () {
+  var id = location.hash.slice(1);
+  show(document.getElementById(id) ? id : 'p1');
+});
+
+(function () {
+  var id = location.hash.slice(1);
+  show(document.getElementById(id) ? id : 'p1');
+})();
+</script>
+</body>
+</html>
